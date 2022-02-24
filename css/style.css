@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 50px 50px 0 50px;
     height: 100vh;
 
     display: grid;
@@ -9,16 +9,48 @@ body{
     "footer footer";
     grid-template-rows: 30px 1fr 40px;
     grid-template-columns: 0.5fr 1fr;
+
+    background-color: #22212C;
 }
 
 header{
     grid-area: header;
     background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
     grid-area: main;
-    background-color: red;
+    margin: 1px solid red;
+}
+
+.caixaFoto{
+    border: 1px solid white;
+    margin: 9% 15% 9% 15%;
+}
+
+.caixaDados{
+    border: 1px solid white;
+    margin: 9% 15% 9% 15%;
+}
+.caixaTecnologias{
+    display: flex;
+    border: 1px solid white;
+    margin: 9% 15% 9% 15%;
+}
+.tecnologias{
+    margin: 0px 4% 0px 4%;
+    
+}
+.itemTecnologia{
+    background-color: #CB92B1;
+    border-radius: 5px;
+    padding: 4px;
+
+    text-align: center;
 }
 
 aside{
@@ -29,4 +61,8 @@ aside{
 footer{
     grid-area: footer;
     background-color: silver;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
